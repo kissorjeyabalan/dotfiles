@@ -6,9 +6,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 set_github_ssh_key() {
-    ssh-add -L
-    test_ssh_connection
-
+    
 }
 
 test_ssh_connection() {
@@ -42,7 +40,7 @@ main() {
     ssh -T git@github.com &> /dev/null
 
     if [ $? -ne 1 ]; then
-        set_github_ssh_key
+        # set_github_ssh_key
     fi
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

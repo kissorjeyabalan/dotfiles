@@ -1,0 +1,16 @@
+jobs:
+  ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Check links from Markdown file
+        run: ./scripts/check_links/markdown.sh
+
+name: Check links
+
+on:
+  schedule:
+    - cron: "0 0 * * SAT"

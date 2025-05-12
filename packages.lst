@@ -1,0 +1,55 @@
+pipewire                                               # audio/video server
+pipewire-alsa                                          # pipewire alsa client
+pipewire-audio                                         # pipewire audio client
+pipewire-jack                                          # pipewire jack client
+pipewire-pulse                                         # pipewire pulseaudio client
+gst-plugin-pipewire                                    # pipewire gstreamer client
+wireplumber                                            # pipewire session manager
+pavucontrol                                            # pulseaudio volume control
+pamixer                                                # pulseaudio cli mixer
+networkmanager                                         # network manager
+network-manager-applet                                 # network manager system tray utility
+udiskie                                                # manage removable media
+ly                                                     # display manager
+hyprland                                               # wlroots-based wayland compositor
+swww                                                   # wallpaper daemon
+waybar                                                 # system bar
+rofi-lbonn-wayland-git                                 # rofi
+hyprshot                                               # screenshot utility
+swaync                                                 # notification daemon/control center
+hyprlock                                               # screen locking utility
+hypridle                                               # idle daemon
+wlogout                                                # logout menu
+iwdrofimenu-git                                        # wifi network menu
+overskride                                             # bluetooth client
+rustmon
+polkit-gnome                                           # authentication agent
+xdg-desktop-portal-hyprland                            # xdg desktop portal for hyprland
+xdg-desktop-portal-gtk                                 # xdg desktop portal using gtk
+zen-browser-bin                                        # browser
+kitty                                                  # terminal
+vim                                                    # terminal text editor
+code                                                   # ide text editor
+nautilus                                               # gtk file manager
+adw-gtk-theme-git                                      # gtk theme
+la-capitaine-icon-theme                                # rofi icon theme
+adwaita-qt6                                            # gtk icon theme
+ttf-jetbrains-mono-nerd                                # main font
+noto-fonts-emoji                                       # emoji font
+python-pywal16                                         # color scheme
+fastfetch                                              # system information fetch tool
+neovim                                                 # vim based text editor
+lf                                                     # terminal file manager
+zsh                                                    # shell
+zinit                                                  # zsh plugin manager
+starship                                               # zsh prompt
+lsd                                                    # better ls
+zoxide                                                 # better cd
+steam                                                  # gaming platform
+gamemode                                               # daemon and library for game optimisations
+mangohud                                               # system performance overlay
+gamescope                                              # micro-compositor for gaming
+cava                                                   # audio visualizer
+spotify                                                # proprietary music streaming service
+spicetify-cli                                          # cli to customize spotify client
+spicetify-marketplace-bin                              # marketplace for spicetify

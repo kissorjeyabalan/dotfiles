@@ -22,7 +22,6 @@ hypridle                                               # idle daemon
 wlogout                                                # logout menu
 iwdrofimenu-git                                        # wifi network menu
 overskride                                             # bluetooth client
-rustmon
 polkit-gnome                                           # authentication agent
 xdg-desktop-portal-hyprland                            # xdg desktop portal for hyprland
 xdg-desktop-portal-gtk                                 # xdg desktop portal using gtk

@@ -36,7 +36,7 @@ bindkey '^[[1;5C' forward-word
 
 # history
 HISTSIZE=10000
-SAVEHIsT=10000
+SAVEHIST=10000
 HISTFILE=~/.zsh_history
 HISTDUPE=erase
 
@@ -77,6 +77,10 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'lsd --color=always --icon=always $realpath'
 
+# gpg agent
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
 
 # shell integrations
 eval "$(fzf --zsh)"

@@ -21,7 +21,8 @@ wal_arguments=""
 
 if [ -s "$THEME_FILE" ]; then
   case $(<"$THEME_FILE") in
-    "light") wal_arguments="--light" ;;
+    "light") wal_arguments="--light --dark-offset 0.2" ;;
+    *) wal_arguments="--dark --bright-offset 0.4" ;;
   esac
 fi
 
@@ -30,5 +31,9 @@ hellwal -i ~/Pictures/wallpaper.png $wal_arguments -q
 
 # Restart waybar
 pgrep -x "waybar" > /dev/null && killall -SIGUSR2 waybar
+
+# Restart cava
+cp $HOME/.cache/hellwal/cava.conf $HOME/.config/cava/config
+pkill -USR2 cava # Reloads cava's colorscheme configuration
 
 spicetify apply -q -n

@@ -2,7 +2,7 @@
 clear
 
 # Meta folder
-meta_folder = "$HOME/.baremetal"
+	meta_folder="$HOME/.baremetal"
 
 pkg_installed() {
     local PkgIn=$1
@@ -47,14 +47,10 @@ prompt_timer() {
     set -e
 }
 
-# Create meta_folder if it doesn't exist
-if [ ! -d "$meta_folder" ]; then
-    mkdir -p "$meta_folder"
-fi
 
 # Check if command exists
 command_exists() {
-    package = "$1"
+    package="$1"
     if ! command -v $package >/dev/null; then
         return 1 # Command does not exist
     else
@@ -64,7 +60,7 @@ command_exists() {
 
 # Install required packages
 install_packages() {
-    toInstall = ()
+    toInstall=()
     for pkg; do
         if [[ $(is_installed "${pkg}") == 0 ]]; then
             echo -e "\033[0;33m[skip]\033[0m ${pkg} is already installed..."
@@ -82,8 +78,8 @@ install_packages() {
 # Install yay if not installed
 install_yay() {
     install_packages "base-devel git"
-    SCRIPT = $(realpath "$0")
-    temp_path = $(dirname "$SCRIPT")
+    SCRIPT=$(realpath "$0")
+    temp_path=$(dirname "$SCRIPT")
     git clone https://aur.archlinux.org/yay.git "$meta_folder/yay"
     cd $meta_folder/yay
     makepkg -si
@@ -92,7 +88,7 @@ install_yay() {
 }
 
 # Read all lines from given file and put it into a list. Ignore comments and empty lines.
-read_list() {
+read_packages() {
     file="$1"
     lines=()
     while IFS= read -r line; do
@@ -151,8 +147,8 @@ printf ":: Checking that required packages are installed...\n"
 
 # Install yay if not installed
 
-archPkg = ()
-aurhPkg = ()
+archPkg=()
+aurhPkg=()
 
 if command_exists "yay"; then
     printf "\033[0;33m[skip]\033[0m ${pkg} is already installed...\n"
@@ -167,7 +163,7 @@ for pkg in ${packages[@]}; do
     if pkg_installed "${pkg}"; then
         printf "\033[0;33m[skip]\033[0m ${pkg} is already installed...\n"
     elif pkg_available "${pkg}"; then
-        #repo=$(pacman -Si "${pkg}" | awk -F ': ' '/Repository / {print $2}')
+        repo=$(pacman -Si "${pkg}" | awk -F ': ' '/Repository / {print $2}')
         printf "\033[0;32m[${repo}]\033[0m queueing ${pkg} from official arch repo...\n"
         archPkg+=("${pkg}")
     elif aur_available "${pkg}"; then
@@ -189,3 +185,9 @@ fi
 # to make command-not-found work
 sudo pkgfile -u
 sudo systemctl enable --now pkgfile-update.timer # Enable automatic updates https://wiki.archlinux.org/title/Pkgfile#Automatic_updates
+
+# stow
+printf "restoring dotfiles with stow\n"
+stow .
+rm $HOME/install.sh
+rm $HOME/packages.lst

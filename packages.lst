@@ -28,7 +28,7 @@ xdg-desktop-portal-gtk                                 # xdg desktop portal usin
 zen-browser-bin                                        # browser
 kitty                                                  # terminal
 vim                                                    # terminal text editor
-code                                                   # ide text editor
+visual-studio-code-bin                                 # ide text editor
 nautilus                                               # gtk file manager
 adw-gtk-theme-git                                      # gtk theme
 la-capitaine-icon-theme                                # rofi icon theme
@@ -52,3 +52,18 @@ cava                                                   # audio visualizer
 spotify                                                # proprietary music streaming service
 spicetify-cli                                          # cli to customize spotify client
 spicetify-marketplace-bin                              # marketplace for spicetify
+grim                                                   # grab images from wayland compositor
+slurp                                                  # wayland compositor region selector
+wl-clipboard                                           # cli copy/paste utilities for wayland
+playerctl                                              # media player controller
+libnotify                                              # desktop notification
+hyprlang                                               # hypr config lang
+pistol-bin                                             # file previewer
+fzf                                                    # cli fuzzy finder
+pkgfile                                                # search files from packages
+pacman-contrib                                         # contrib scripts&tools for pacman
+ripgrep                                                # recursive grep
+unzip                                                  # archive extractor
+npm                                                    # js package manager
+stow                                                   # manage directory
+wttrbar                                                # weather module

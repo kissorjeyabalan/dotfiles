@@ -1,17 +1,34 @@
 #!/bin/bash
 
 THEME_FILE="/tmp/theme_variant"
+#wal_arguments=""
+
+#if [ -s "$THEME_FILE" ]; then
+#  case $(<"$THEME_FILE") in
+#    "light") wal_arguments="lighten -l" ;;
+#  esac
+#fi
+
+#wal -i ~/Pictures/wallpaper.png --cols16 $wal_arguments -q -n -e
+
+#pgrep -x "waybar" > /dev/null && killall -SIGUSR2 waybar
+
+#walogram -s > /dev/null
+#spicetify apply -q -n
+
+
 wal_arguments=""
 
 if [ -s "$THEME_FILE" ]; then
   case $(<"$THEME_FILE") in
-    "light") wal_arguments="lighten -l" ;;
+    "light") wal_arguments="--light" ;;
   esac
 fi
 
-wal -i ~/Pictures/wallpaper.png --cols16 $wal_arguments -q -n -e
+hellwal -i ~/Pictures/wallpaper.png $wal_arguments -q
 
+
+# Restart waybar
 pgrep -x "waybar" > /dev/null && killall -SIGUSR2 waybar
 
-walogram -s > /dev/null
 spicetify apply -q -n

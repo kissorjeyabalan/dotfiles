@@ -1,4 +1,4 @@
-@theme "~/.cache/wal/colors-rofi-dark.rasi"
+@theme "~/.cache/hellwal/colors-light-dark.rasi"
 
 configuration {
   drun-display-format: "{name}";

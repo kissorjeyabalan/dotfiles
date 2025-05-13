@@ -1,26 +1,26 @@
-[Pywal]
+[light]
 ; https://rosepinetheme.com/palette
 text               = FFFFFF
 subtext            = e3e3e3
-nav-active         = {background.strip}
-nav-active-text    = {color3.strip}
-main               = {background.strip}
-main-secondary     = {background.strip}
-sidebar            = {background.strip}
-player             = {background.strip}
-card               = {color3.strip}
-shadow             = {color11.strip}
-button             = {background.strip}
-button-secondary   = {color3.strip}
-button-active      = {color3.strip}
-button-disabled    = {color8.strip}
-nav-active         = {background.strip}
-play-button        = {color3.strip}
-tab-active         = {color3.strip}
-notification       = {foreground.strip}
-notification-error = {background.strip}
-playback-bar       = {color3.strip}
-misc               = {color3.strip}
+nav-active         = %%background.strip%%
+nav-active-text    = %%color3.strip%%
+main               = %%background.strip%%
+main-secondary     = %%background.strip%%
+sidebar            = %%background.strip%%
+player             = %%background.strip%%
+card               = %%color3.strip%%
+shadow             = %%color11.strip%%
+button             = %%background.strip%%
+button-secondary   = %%color3.strip%%
+button-active      = %%color3.strip%%
+button-disabled    = %%color8.strip%%
+nav-active         = %%background.strip%%
+play-button        = %%color3.strip%%
+tab-active         = %%color3.strip%%
+notification       = %%foreground.strip%%
+notification-error = %%background.strip%%
+playback-bar       = %%color3.strip%%
+misc               = %%color3.strip%%
 
 ; Description
 

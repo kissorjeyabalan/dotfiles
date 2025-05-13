@@ -30,7 +30,7 @@ return {
       },
     })
     local ruff_config_path = vim.loop.os_homedir() .. "/.config/nvim/tool_configs/ruff.toml"
-    lspconfig.ruff_lsp.setup({
+    lspconfig.ruff.setup({
       capabilities = capabilities,
       init_options = {
         settings = {

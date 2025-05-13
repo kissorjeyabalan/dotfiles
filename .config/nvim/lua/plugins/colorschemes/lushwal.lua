@@ -9,6 +9,7 @@ return {
     vim.g.lushwal_configuration = {
       compile_to_vimscript = false,
       addons = {
+        wal_path = vim.fn.expand("~/.cache/hellwal/colors.json"),
         bufferline_nvim = true,
         gitsigns_nvim = true,
         indent_blankline_nvim = true,

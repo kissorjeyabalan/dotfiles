@@ -16,7 +16,7 @@ return {
         "lua-language-server",
         "stylua",
         "basedpyright",
-        "ruff_lsp",
+        "ruff",
         "prettierd",
         "stylelint",
         "bash-language-server",

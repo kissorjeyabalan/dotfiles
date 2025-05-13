@@ -67,7 +67,7 @@ return {
             priority = 650,
           },
           {
-            name = "codeium",
+            name = "copilot",
             priority = 550,
           },
           {

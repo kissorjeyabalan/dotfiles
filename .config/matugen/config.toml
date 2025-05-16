@@ -1,0 +1,60 @@
+[config]
+version_check = true
+reload_apps = true
+
+# waybar
+[templates.waybar]
+input_path = '~/.config/matugen/templates/colors-waybar.css'
+output_path = '~/.config/waybar/css/colors-waybar.css'
+#post_hook = 'pkill -SIGUSR2 waybar'
+
+# swaync
+[templates.swaync]
+input_path = '~/.config/matugen/templates/colors-swaync.css'
+output_path = '~/.config/swaync/css/colors-swaync.css'
+#post_hook = 'pkill -SIGUSR2 waybar'
+
+# cava
+[templates.cava]
+input_path = '~/.config/matugen/templates/cava'
+output_path = '~/.config/cava/config'
+
+# kitty
+[templates.kitty]
+input_path = '~/.config/matugen/templates/colors-kitty.conf'
+output_path = '~/.config/kitty/colors-kitty.conf'
+
+# spicetify
+[templates.spicetify]
+input_path = '~/.config/matugen/templates/spotify-colors.ini'
+output_path = '~/.config/spicetify/Themes/wal/color.ini'
+
+[templates.gtk3]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/colors.css'
+
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/colors.css'
+
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/hyprland-colors.conf'
+output_path = '~/.config/hypr/colors.conf'
+post_hook = 'hyprctl reload'
+
+[templates.rofi]
+input_path = '~/.config/matugen/templates/colors-rofi.rasi'
+output_path = '~/.config/rofi/colors.rasi'
+
+[templates.vscode]
+input_path = "~/.config/matugen/templates/colors-vscode.json"
+output_path = "~/.vscode/extensions/hyprluna.hyprluna-theme-1.0.2/themes/hyprluna.json"
+
+[templates.discord]
+input_path = "~/.config/matugen/templates/discord.css"
+output_path = "~/.config/Vencord/themes/matugen.theme.css"
+
+[templates.starship]
+input_path = "~/.config/matugen/templates/starship-colors.toml"
+output_path = "~/.config/starship.toml"
+#post_hook = "starship init zsh > ~/.zshrc"

@@ -1,4 +1,4 @@
-@theme "~/.cache/hellwal/colors-rofi-dark.rasi"
+@theme "~/.config/rofi/colors.rasi"
 
 configuration {
     modi:                        "drun";
@@ -13,13 +13,14 @@ configuration {
 }
 
 * {
-    background-alt:              @selected-active-background; // Buttons background
-    selected:                    @selected-normal-background; // Button selected
-    active:                      @selected-urgent-background; // Window activated
-    urgent:                      @selected-normal-background; // When hovering the activated window (maybe more?)
-    text-selected:               @selected-active-background;
+    background-alt:              @background; // Buttons background
+    selected:                    @background; // Button selected
+    active:                      @background; // Window activated
+    urgent:                      @background; // When hovering the activated window (maybe more?)
+    text-selected:               @background;
     text-color:                  @foreground;
-    border-color:                @selected;
+    border-color:                @parimary;
+    foreground:                  @on-surface;
 }
 
 

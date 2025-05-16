@@ -1,4 +1,10 @@
-@theme "~/.cache/hellwal/colors-light-dark.rasi"
+@theme "~/.config/rofi/colors.rasi"
+
+* {
+    color11: @primary;
+    color5: @on-primary-fixed;
+    foreground: @on-surface;
+}
 
 configuration {
   drun-display-format: "{name}";
@@ -13,7 +19,7 @@ window {
   border-radius: 10px;
   background-color: @background;
   border: 2px;
-  border-color: @border-color;
+  border-color: @color11;
   children: [ "mainbox" ];
 }
 
@@ -31,7 +37,7 @@ listbox {
 }
 
 inputbar {
-  text-color: @text-color;
+  text-color: @foreground;
   padding: 10px;
   margin: 10px;
   background-color: @background;
@@ -41,7 +47,7 @@ inputbar {
 
 entry {
   background-color: transparent;
-  text-color: @text-color;
+  text-color: @foreground;
   placeholder-color: inherit;
 }
 
@@ -60,52 +66,52 @@ element {
   enabled: true;
   padding: 8px;
   margin: 2px;
-  text-color: inherit;
+  text-color: @foreground;
   border-radius: 10px;
 }
 
 element.normal.normal {
-  background-color: @element-background;
+  background-color: inherit;
   text-color: @foreground;
 }
 
 element.normal.urgent {
-  background-color: @element-background;
+  background-color: inherit;
   text-color: @foreground;
 }
 
 element.normal.active {
-  background-color: @element-background;
+  background-color: inherit;
   text-color: @foreground;
 }
 
 element.selected.normal {
-  background-color: @main-color;
+  background-color: @color5;
   text-color: @foreground;
 }
 
 element.selected.urgent {
-  background-color: @main-color;
+  background-color: @color5;
   text-color: @foreground;
 }
 
 element.selected.active {
-  background-color: @main-color;
+  background-color: @color5;
   text-color: @foreground;
 }
 
 element.alternate.normal {
-  background-color: @element-background;
+  background-color: inherit;
   text-color: @foreground;
 }
 
 element.alternate.urgent {
-  background-color: @element-background;
+  background-color: inherit;
   text-color: @foreground;
 }
 
 element.alternate.active {
-  background-color: @element-background;
+  background-color: inherit;
   text-color: @foreground;
 }
 
@@ -116,12 +122,12 @@ element-icon {
 }
 
 element-text {
-  text-color: @text-color;
+  text-color: inherit;
   background-color: transparent;
   vertical-align: 0.5;
 }
 
 element-text selected.normal {
-  text-color: @text-color-selected;
+  text-color: @foreground;
   background-color: transparent;
 }

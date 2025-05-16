@@ -35,7 +35,8 @@ la-capitaine-icon-theme                                # rofi icon theme
 adwaita-qt6                                            # gtk icon theme
 ttf-jetbrains-mono-nerd                                # main font
 noto-fonts-emoji                                       # emoji font
-hellwal                                                # color scheme
+matugen                                                # color scheme
+wallust                                                # color scheme
 fastfetch                                              # system information fetch tool
 neovim                                                 # vim based text editor
 lf                                                     # terminal file manager

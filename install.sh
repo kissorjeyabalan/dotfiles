@@ -191,9 +191,3 @@ printf "restoring dotfiles with stow\n"
 stow .
 rm $HOME/install.sh
 rm $HOME/packages.lst
-
-# symlink hellwal to wal
-printf "symlinking hellwal to wal\n"
-mkdir -p $HOME/.cache/hellwal
-mkdir -p $HOME/.cache/wal
-ln -s $HOME/.cache/hellwal $HOME/.cache/wal
